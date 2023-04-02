@@ -1,0 +1,138 @@
+/* COLORS */ 
+.bright-green {
+    background: #bbe9db;
+}
+
+.dark-green {
+    background: #aeccc6;
+}
+
+.light-gray {
+    background: #9ba6a5;
+}
+
+.dark-gray {
+    background: #757a79;
+}
+
+/* SIDE NAVIGATION */ 
+.hamburger{
+    font-size: 30px;
+    cursor: pointer;
+    margin: 50px;
+    padding-top: 50px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9ba6a5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #9ba6a5;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* BUTTON CSS */
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-52:after {
+    content: "";
+    background-color: #aeccc6;
+    border-radius: 50px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .button-52 {
+        padding: 13px 50px 13px;
+    }
+}
+
+
+/* INPUT HTML */ 
+input {
+    border: 1px solid black;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 100%;
+    position: relative;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    transition: all .2s ease;
+}
+
+input:hover {
+    box-shadow: 0 0 0 0 #fff inset, #aeccc6 0 0 0 2px;
+}
+
+input:focus {
+    background: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 #fff inset, #aeccc6 0 0 0 3px;
+}
