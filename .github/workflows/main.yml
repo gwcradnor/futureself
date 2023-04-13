@@ -1,0 +1,26 @@
+name: Upload Website 
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    name: Upload to AWS S3
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        role-to-assume: arn:aws:iam::228077018684:role/GithubActionsS3
+        aws-region: us-east-1
+
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./public/ s3://futureself.me --delete
