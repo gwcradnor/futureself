@@ -1,3 +1,20 @@
+/* BANNER */ 
+
+/* HEY LUNA !! */ 
+/* 
+
+Here's the style for the banner 
+Use this on each page to make the site look consistent
+See the home.html page for an example
+
+*/ 
+.banner {
+    background-color: #3EB489;
+    height: 200px;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
 /* COLORS */ 
 .bright-green {
     background: #bbe9db;
@@ -69,6 +86,12 @@
 }
 
 /* BUTTON CSS */
+
+/* HI GRACE!!
+
+    Make your changes for button styles here :)
+
+*/
 .button-52 {
     font-size: 16px;
     font-weight: 200;

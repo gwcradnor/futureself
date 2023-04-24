@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
+        <!-- HI LAGHIMA! -->
+        <!-- 
+            I pulled in the header values from the homepage for you
+            This will ensure you have consistent fonts and styles as the other pages
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Future Self</title>
+        <script src="sidenav.js"></script>
+        <link rel="stylesheet" href="./simple-grid.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- 
+            Good job making your styles into css classes
+            That is good practice!
+            Since we're pulling styles in from a shared css file, 
+            you won't need to redefine classes such as h1
+        
+            I left you some feedback in inline comments 
+        -->
         <style>
-            h1{
+            .h1{
+                /* 
+                H1 is a text tag, not layout, therefore    
+                width, height, and background color are not properties of text
+                */
                 width: 960px;
                 height: 200px;
+                background-color: blue;
+
+                /* These three are great for modifying text elements! */ 
                 color: black;
                 font-size:34px;
                 font-family: Arial;
-                background-color: blue;
-                
             }
             main{
                 width: 860px;
@@ -23,16 +55,48 @@
 
     <body>
         <h1>
+            <!-- 
+                Typically we don't want to put anything in an h1 except text
+                <br> tags affect page layout and shouldn't be nested in text elements
+            -->
             <br/>
             <br/>
             <br/>
             <br/>
             <b>About Future Self</b>
         </h1>
+        <!-- Good use of the main tag! -->
         <main>
             Future Self was created by the Girls Who Code club at the Radnor Library. We created this website to make a difference and help connect girls who are like-minded.
-        <br/>
+        <br/> <!-- Instead of this br tag, try wrapping each line in a paragraph tag instead -->
             The developers behind Future Self are:
         </main>
+
+        <!-- 
+            To better control layout, use div tags and classes 
+            I'll get you started with the layout for our developer features
+        -->
+        <div class="container">
+            <div class="row">
+                <!-- Add your code from the main tag here, watch how the layout changes :) ! -->
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Name</h3>
+                    <p>School</p>
+                    <p>Career ambition</p>
+                </div>
+                <div class="col-4">
+                    <h3>Name</h3>
+                    <p>School</p>
+                    <p>Career ambition</p>
+                </div>
+                <div class="col-4">
+                    <h3>Name</h3>
+                    <p>School</p>
+                    <p>Career ambition</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
