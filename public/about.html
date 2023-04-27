@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-        <span class="hamburger" onclick="openNav()">&#9776;</span>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="about.html">About</a>
-            <a href="signup.html">Sign Up</a>
-            <a href="home.html">Home</a>
-            <a href="mentees.html">Mentees</a>
-        </div>
-        <script src="./sidenav.js"></script>
-        <!-- HI LAGHIMA! -->
-        <!-- 
-            I pulled in the header values from the homepage for you
-            This will ensure you have consistent fonts and styles as the other pages
-        -->
+    
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,68 +12,28 @@
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-
-        <!-- 
-            Good job making your styles into css classes
-            That is good practice!
-            Since we're pulling styles in from a shared css file, 
-            you won't need to redefine classes such as h1
-        
-            I left you some feedback in inline comments 
-        -->
-        <style>
-            .h1{
-                /* 
-                H1 is a text tag, not layout, therefore    
-                width, height, and background color are not properties of text
-                */
-
-                /* These three are great for modifying text elements! */ 
-                color: black;
-                font-size:34px;
-                font-family: Arial;
-                padding-left: 50px;
-            }
-            header{
-                background-color: #3eb4894e;
-    height: 200px;
-    margin-top: -100px;
-    padding-top: 100px;
-            }
-            main{
-                width: 860px;
-                margin-left:50px;
-                font-family: Arial;
-                font-size: 30px;
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
 
     <body>
-        <header>
-            <div class="banner">
-                <div class="container">
-                <h1>
-                    <!-- 
-                        Typically we don't want to put anything in an h1 except text
-                        <br> tags affect page layout and shouldn't be nested in text elements
-                    -->
-                    <b>About Future Self</b>
-                </h1>
-                </div>
-            </div>
-        </header>
-        
-        <!-- Good use of the main tag! -->
-        
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="mentees.html">Mentees</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
 
-        <!-- 
-            To better control layout, use div tags and classes 
-            I'll get you started with the layout for our developer features
-        -->
+        <div class="banner">
+            <div class="container">
+            <h1>
+                About Future Self
+            </h1>
+            </div>
+        </div>
+ 
         <div class="container">
             <div class="row">
                 <main>
