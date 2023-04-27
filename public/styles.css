@@ -1,16 +1,7 @@
 /* BANNER */ 
-
-/* HEY LUNA !! */ 
-/* 
-
-Here's the style for the banner 
-Use this on each page to make the site look consistent
-See the home.html page for an example
-
-*/ 
 .banner {
     background-color:#b4f1f1; 
-    height: 200px;
+    height: 100px;
     margin-top: -100px;
     padding-top: 100px;
 }
