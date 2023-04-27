@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">About</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="home.html">Home</a>
+            <a href="mentees.html">Mentees</a>
+        </div>
+        <script src="./sidenav.js"></script>
         <!-- HI LAGHIMA! -->
         <!-- 
             I pulled in the header values from the homepage for you
@@ -34,14 +41,18 @@
                 H1 is a text tag, not layout, therefore    
                 width, height, and background color are not properties of text
                 */
-                width: 960px;
-                height: 200px;
-                background-color: blue;
 
                 /* These three are great for modifying text elements! */ 
                 color: black;
                 font-size:34px;
                 font-family: Arial;
+                padding-left: 50px;
+            }
+            header{
+                background-color: #3eb4894e;
+    height: 200px;
+    margin-top: -100px;
+    padding-top: 100px;
             }
             main{
                 width: 860px;
@@ -54,23 +65,22 @@
 
 
     <body>
-        <h1>
-            <!-- 
-                Typically we don't want to put anything in an h1 except text
-                <br> tags affect page layout and shouldn't be nested in text elements
-            -->
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <b>About Future Self</b>
-        </h1>
+        <header>
+            <div class="banner">
+                <div class="container">
+                <h1>
+                    <!-- 
+                        Typically we don't want to put anything in an h1 except text
+                        <br> tags affect page layout and shouldn't be nested in text elements
+                    -->
+                    <b>About Future Self</b>
+                </h1>
+                </div>
+            </div>
+        </header>
+        
         <!-- Good use of the main tag! -->
-        <main>
-            Future Self was created by the Girls Who Code club at the Radnor Library. We created this website to make a difference and help connect girls who are like-minded.
-        <br/> <!-- Instead of this br tag, try wrapping each line in a paragraph tag instead -->
-            The developers behind Future Self are:
-        </main>
+        
 
         <!-- 
             To better control layout, use div tags and classes 
@@ -78,25 +88,52 @@
         -->
         <div class="container">
             <div class="row">
-                <!-- Add your code from the main tag here, watch how the layout changes :) ! -->
+                <main>
+                    <p>
+                        Future Self was created by the Girls Who Code club at the Radnor Library. We created this website to make a difference and help connect girls who are like-minded.
+                    </p>
+                    <p>
+                        The developers behind Future Self are:
+                    </p>
+                </main>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <h3>Name</h3>
-                    <p>School</p>
-                    <p>Career ambition</p>
+                    <h3>Grace</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being a <i>Therapist!</i></p>
                 </div>
                 <div class="col-4">
-                    <h3>Name</h3>
-                    <p>School</p>
-                    <p>Career ambition</p>
+                    <h3>Nikki</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being a <i>Doctor!</i></p>
                 </div>
                 <div class="col-4">
-                    <h3>Name</h3>
-                    <p>School</p>
-                    <p>Career ambition</p>
+                    <h3>Laghima</h3>
+                    <p>Spring-ford 9th Grade Center</p>
+                    <p>I dream of being a <i>Software Engineer!</i></p>
+                </div>
+                <div class="col-4">
+                    <h3>Luna</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being an <i>Athlete!</i></p>
+                </div>
+                <div class="col-4">
+                    <h3>Zoe</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being a <i>Veterinarian!</i></p>
+                </div>
+                <div class="col-4">
+                    <h3>Esha</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being an <i>Environmental Scientist!</i></p>
+                </div>
+                <div class="col-4">
+                    <h3>Sam</h3>
+                    <p>Radnor Middle School</p>
+                    <p>I dream of being a <i>Biologist!</i></p>
                 </div>
             </div>
         </div>
-    </body>
+    </iody>
 </html>
