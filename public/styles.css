@@ -77,7 +77,11 @@
 }
 
 /* BUTTON CSS */
-
+.inserthere{
+    width: 300px;
+    height: 101px;
+  
+}
 /* HI GRACE!!
 
     Make your changes for button styles here :)
@@ -94,7 +98,7 @@
     border-radius: 50px;
     cursor: pointer;
     position: relative;
-    background-color: teal;
+    background-color: #b4f1f1;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -142,7 +146,7 @@ input {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color: black;
     height: 40px;
     transition: all .2s ease;
 }
